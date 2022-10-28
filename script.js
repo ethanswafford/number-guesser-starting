@@ -30,4 +30,8 @@ function updateScore(winner) {
     }
 }
 
+function advanceRound() {
+    currentRoundNumber++;
+}
+
 console.log(generateTarget());
