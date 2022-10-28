@@ -20,8 +20,14 @@ function compareGuesses(userGuess, computerGuess, targetGuess) {
     }
 }
 
-function updateScore() {
-
+function updateScore(winner) {
+    if (winner === "human") {
+        humanScore++;
+    } else {
+        if (winner === "computer") {
+            computerScore++;
+        }
+    }
 }
 
 console.log(generateTarget());
